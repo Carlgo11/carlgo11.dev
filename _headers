@@ -1,0 +1,6 @@
+*
+  Access-Control-Allow-Origin: https://carlgo11.dev
+  Permissions-Policy: microphone=(), geolocation=()
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  X-Robots-Tag: noindex
