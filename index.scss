@@ -6,9 +6,7 @@
   @media screen and (prefers-color-scheme: dark) {
     --text-color: #eee;
     --background-primary: #111;
-    --background-main: #111;
     --btn-background: #333;
-    --btn-text: #eee;
   }
 }
 
@@ -53,7 +51,7 @@ ul {
 
   li {
     background: var(--btn-background);
-    color: var(--btn-text);
+    color: var(--text-color);
     padding: 1rem;
     margin-top: clamp(1rem, 2vw, 18px);
     border-radius: 5000px;
@@ -65,15 +63,18 @@ ul {
 
   a {
     text-decoration: none;
-    color: var(--btn-text);
+    color: var(--text-color);
   }
 }
 
 .bi-keybase::before {
   content: '';
-  background: url("https://cdn.simpleicons.org/keybase/eee");
   width: 17.6px;
   height: 17.6px;
+  background: url("https://cdn.simpleicons.org/keybase/111");
+  @media screen and (prefers-color-scheme: dark) {
+    background: url("https://cdn.simpleicons.org/keybase/eee");
+  }
 }
 
 #imessage-btn {
