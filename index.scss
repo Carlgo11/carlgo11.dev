@@ -60,11 +60,15 @@ a {
     font-size: 1.1em;
     padding: 1rem;
     margin-top: clamp(1rem, 2vw, 18px);
+  }
 
-    i {
+  span {
+    &:before {
       margin-right: .5rem;
+      font-family: 'bootstrap-icons';
+    }
 
-      &.bi-keybase::before {
+    &.bi-keybase:before {
         content: '';
         width: 17.6px;
         height: 17.6px;
@@ -73,6 +77,6 @@ a {
           background: url("https://cdn.simpleicons.org/keybase/eee");
         }
       }
-    }
+
   }
 }
