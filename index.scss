@@ -65,18 +65,6 @@ a {
   span {
     &:before {
       margin-right: .5rem;
-      font-family: 'bootstrap-icons';
     }
-
-    &.bi-keybase:before {
-        content: '';
-        width: 17.6px;
-        height: 17.6px;
-        background: url("https://cdn.simpleicons.org/keybase/111");
-        @media screen and (prefers-color-scheme: dark) {
-          background: url("https://cdn.simpleicons.org/keybase/eee");
-        }
-      }
-
   }
 }
