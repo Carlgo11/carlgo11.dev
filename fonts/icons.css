@@ -21,9 +21,6 @@
   }
 }
 
-[data-icon]::before { content: attr(data-icon); }
-
-[data-icon]::before,
 .bluesky::before,
 .github::before,
 .imessage::before,
