@@ -63,8 +63,39 @@ a {
   }
 
   span {
+    transition: .2s;
+
     &:before {
       margin-right: .5rem;
+    }
+
+    &:hover {
+      &.blog {
+        color: #5cb85c;
+      }
+      &.twitter {
+        color: #1D9BF0;
+      }
+
+      &.mastodon {
+        color: #6364FF;
+      }
+
+      &.bluesky {
+        color: #0285FF;
+      }
+
+      &.keybase {
+        color: #33A0FF;
+      }
+
+      &.reddit {
+        color: #FF4500;
+      }
+
+      &.imessage {
+        color: #34c759;
+      }
     }
   }
 }

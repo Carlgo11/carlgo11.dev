@@ -21,14 +21,17 @@
   }
 }
 
+[data-icon]::before { content: attr(data-icon); }
+
+[data-icon]::before,
+.blog::before,
 .bluesky::before,
 .github::before,
 .imessage::before,
 .keybase::before,
 .mastodon::before,
 .reddit::before,
-.twitter::before,
-.www::before {
+.twitter::before {
   display: inline-block;
   font-family: "icons";
   font-style: normal;
@@ -43,6 +46,7 @@
   font-smoothing: antialiased;
 }
 
+.blog::before { content: "\f108"; }
 .bluesky::before { content: "\f100"; }
 .github::before { content: "\f101"; }
 .imessage::before { content: "\f102"; }
@@ -50,4 +54,3 @@
 .mastodon::before { content: "\f104"; }
 .reddit::before { content: "\f105"; }
 .twitter::before { content: "\f106"; }
-.www::before { content: "\f107"; }
