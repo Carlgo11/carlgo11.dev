@@ -59,7 +59,6 @@
     imessage_fpr.addEventListener('click', async () => {
         try {
             await navigator.clipboard.writeText(imessage_fpr.innerText)
-            console.info('Password copied to clipboard');
         } catch (e) {
             console.error('Failed to copy: ', e);
         }

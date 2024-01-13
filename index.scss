@@ -60,6 +60,45 @@ a {
     font-size: 1.1em;
     padding: 1rem;
     margin-top: clamp(1rem, 2vw, 18px);
+
+    @media not (prefers-reduced-motion: reduce) {
+      transition: .2s;
+      /*&:hover {
+        padding: 1.2rem;
+        margin-top: calc(clamp(1rem, 2vw, 18px) - .4rem);
+      }*/
+      &:hover {
+        &:has(.blog) {
+          color: #5cb85c;
+        }
+
+        &:has(.twitter) {
+          color: #1d9bf0;
+        }
+
+        &:has(.mastodon) {
+          color: #6364ff;
+        }
+
+        &:has(.bluesky) {
+          color: #0285ff;
+        }
+
+        &:has(.keybase) {
+          color: #33a0ff;
+        }
+
+        &:has(.reddit) {
+          color: #ff4500;
+        }
+
+        &:has(.imessage) {
+          span {
+            color: #34c759;
+          }
+        }
+      }
+    }
   }
 
   span {
@@ -67,35 +106,6 @@ a {
 
     &:before {
       margin-right: .5rem;
-    }
-
-    &:hover {
-      &.blog {
-        color: #5cb85c;
-      }
-      &.twitter {
-        color: #1D9BF0;
-      }
-
-      &.mastodon {
-        color: #6364FF;
-      }
-
-      &.bluesky {
-        color: #0285FF;
-      }
-
-      &.keybase {
-        color: #33A0FF;
-      }
-
-      &.reddit {
-        color: #FF4500;
-      }
-
-      &.imessage {
-        color: #34c759;
-      }
     }
   }
 }
