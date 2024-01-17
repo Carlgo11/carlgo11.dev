@@ -109,3 +109,34 @@ a {
     }
   }
 }
+
+dialog {
+  background: var(--btn-background);
+  color: var(--text-color);
+  //box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+
+  &:before {
+    content: 'iMessage Fingerprint';
+    font-size: 1.5em;
+  }
+
+  &::backdrop {
+    background: var(--background-primary);
+    opacity: 0.75;
+  }
+
+  overflow: hidden;
+  border: none;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  code {
+    width: 100%;
+    max-width: 100vw;
+    display: block;
+    overflow: scroll;
+    font-size: 1.1em;
+    font-family: monospace;
+    margin: .5em 0;
+  }
+}

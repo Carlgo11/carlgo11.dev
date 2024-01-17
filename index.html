@@ -43,14 +43,27 @@
 
   <a role="button" id="imessage" href="#imessage-fpr">
     <span class="imessage">iMessage Key</span>
-    <code id="imessage-fpr" hidden="">APKTIDC1TBrrqAtcYPgPFflKdKz7yPUB98bewEwwoaHNOhxe_UDQ</code>
   </a>
+  <dialog>
+    <code id="imessage-fpr">APKTIDC1TBrrqAtcYPgPFflKdKz7yPUB98bewEwwoaHNOhxe_UDQ</code>
+  </dialog>
 </main>
-<script>
+<script type="application/javascript">
     const imessage_fpr = document.getElementById('imessage-fpr');
-    document.getElementById('imessage').addEventListener('click', () => {
-            imessage_fpr.toggleAttribute('hidden')
+    const dialog = document.querySelector('dialog');
+    const closeDialogOnOutsideClickOnce = (event) => {
+        if (dialog === event.target) {
+            dialog.close();
+            document.body.removeEventListener('click', closeDialogOnOutsideClickOnce);
         }
+    }
+
+    document.getElementById('imessage').addEventListener('click', () => {
+        dialog.showModal()
+        setTimeout(() => {
+            document.body.addEventListener('click', closeDialogOnOutsideClickOnce);
+        }, 0);
+      }
     )
 
     imessage_fpr.addEventListener('click', async () => {
