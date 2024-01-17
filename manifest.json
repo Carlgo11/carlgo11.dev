@@ -1,0 +1,33 @@
+{
+  "name": "Carlgo11",
+  "lang": "en",
+  "start_url": "/",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "https://avatars.githubusercontent.com/u/3535780?s=64",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "https://avatars.githubusercontent.com/u/3535780?s=120",
+      "type": "image/png",
+      "sizes": "120x120"
+    },
+    {
+      "src": "https://avatars.githubusercontent.com/u/3535780?s=180",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "https://avatars.githubusercontent.com/u/3535780?s=200",
+      "type": "image/png",
+      "sizes": "200x200"
+    },
+    {
+      "src": "https://avatars.githubusercontent.com/u/3535780",
+      "type": "image/png",
+      "sizes": "any"
+    }
+  ]
+}
