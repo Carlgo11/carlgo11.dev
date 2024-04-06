@@ -1,5 +1,6 @@
-*
+/*
   Access-Control-Allow-Origin: https://carlgo11.dev
+  Content-Security-Policy: default-src 'self'; script-src 'self', 'unsafe-inline'
   Permissions-Policy: microphone=(), geolocation=()
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
